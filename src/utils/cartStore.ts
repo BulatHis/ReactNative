@@ -29,7 +29,7 @@ export const addToCart = async (product: {
     }
 
     await AsyncStorage.setItem('cart', JSON.stringify(cart))
-    emitCartUpdate() // 🔥 Уведомляем слушателей
+    emitCartUpdate()
   } catch (error) {
     console.error('Ошибка при добавлении в корзину:', error)
   }
@@ -48,7 +48,7 @@ export const removeFromCart = async (productId: number) => {
       }
 
       await AsyncStorage.setItem('cart', JSON.stringify(cart))
-      emitCartUpdate() // 🔥 Уведомляем слушателей
+      emitCartUpdate()
     }
   } catch (error) {
     console.error('Ошибка при удалении из корзины:', error)
@@ -83,7 +83,7 @@ export const updateCartItem = async (productId: number, change: number) => {
     }
 
     await AsyncStorage.setItem('cart', JSON.stringify(cart))
-    emitCartUpdate() // 🔥 Уведомляем слушателей
+    emitCartUpdate()
   } catch (error) {
     console.error('Ошибка при обновлении количества товара:', error)
   }

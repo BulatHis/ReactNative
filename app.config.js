@@ -3,7 +3,7 @@ import 'dotenv/config'
 export default {
   expo: {
     name: 'SmartBasket',
-    slug: 'samrtbasket', // Исправлена опечатка ("samrtbasket" → "smartbasket")
+    slug: 'smartbasket',
     orientation: 'portrait',
     icon: './assets/icon.png',
     userInterfaceStyle: 'light',

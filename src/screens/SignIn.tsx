@@ -65,6 +65,7 @@ const SignIn: React.FC<Props> = ({ navigation }) => {
 				<TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
 					<Text style={styles.footerText}>Регистрация</Text>
 				</TouchableOpacity>
+
 				<TouchableOpacity
 					onPress={() => navigation.navigate('PasswordRecovery')}
 				>
